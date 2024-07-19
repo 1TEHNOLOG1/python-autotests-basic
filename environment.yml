@@ -1,0 +1,9 @@
+name: testenv2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - requests
+  - selenium
+  - pytest
+#  - chromedriver-py=126.0.6478.182
