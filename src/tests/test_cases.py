@@ -19,10 +19,11 @@ class TestCases:
         driver.get(' https://github.com/microsoft/vscode/issues')
         driver.find_element(By.XPATH, '//*[@title="Author"]').click()
         driver.find_element(By.ID, 'author-filter-field').send_keys('bpasero')
-        driver.find_element(By.XPATH,
-                            '//*[@class="SelectMenu-item d-block js-new-item-value"][@value="bpasero"]]').click()
+        driver.implicitly_wait(5)
+        driver.find_element(By.XPATH, '//*[@class="SelectMenu-list select-menu-list is-showing-new-item-form"]').click()
+        driver.implicitly_wait(5)
+        time.sleep(5)
 
-        pass
 
     def test_case3(self, set_up_browser):
         driver = set_up_browser
