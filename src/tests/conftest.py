@@ -1,5 +1,5 @@
 from selenium import webdriver
-from chromedriver_py import binary_path # this will get you the path variable
+from chromedriver_py import binary_path
 import pytest
 
 
