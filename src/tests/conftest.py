@@ -9,5 +9,6 @@ def set_up_browser():
     driver = webdriver.Chrome(service=svc)
     options = webdriver.ChromeOptions()
     options.headless = True
+    driver.implicitly_wait(10)
     yield driver
     driver.quit()
