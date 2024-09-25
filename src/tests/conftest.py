@@ -18,6 +18,3 @@ def set_up_browser():
     logger.info("stop")
     yield driver
     driver.quit()
-
-
-
