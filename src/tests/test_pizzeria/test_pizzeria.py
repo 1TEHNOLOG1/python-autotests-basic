@@ -154,7 +154,7 @@ class TestPizza:
         with allure.step("Запуск браузера"):
             driver = set_up_browser
             bonus_program = BonusProgram(driver)
-            bonus_program.bonus_program(name="aleks", phone="+79960014897")
+            bonus_program.bonus_program(name="aleks", phone="+79960024897")
             driver.switch_to.alert.accept()
             WebDriverWait(set_up_browser, 10).until(
                 EC.visibility_of_element_located((By.XPATH, "//div/div/h3"))
