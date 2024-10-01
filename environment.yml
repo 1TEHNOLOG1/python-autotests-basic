@@ -6,4 +6,3 @@ dependencies:
   - requests
   - selenium
   - pytest
-#  - chromedriver-py=126.0.6478.182
